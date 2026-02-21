@@ -1,44 +1,92 @@
-# Cadastro de Produto
+```markdown
+# 🛒 Cadastro de Produto
 
-## Descrição
+## 🚀 Descrição
 
-Projeto simples para cadastro e gerenciamento de produtos, desenvolvido em PHP. Permite a inserção de novos produtos e possivelmente sua listagem e manutenção básica. Ideal para aplicações pequenas e aprendizado.
+O **Cadastro de Produto** é uma aplicação web simples e eficiente para o gerenciamento de produtos, permitindo o cadastro, visualização e organização das informações básicas dos itens de forma prática. Desenvolvido em PHP, este projeto tem como objetivo facilitar o controle de produtos em pequenos sistemas ou como base para projetos maiores, sendo ideal para desenvolvedores que desejam aprender sobre CRUD (Create, Read, Update, Delete) no ambiente PHP.
 
-## Funcionalidades Principais
+---
 
-- Tela principal para cadastro de produtos.
-- Inserção de dados básicos de um produto por meio de formulário.
-- Configuração centralizada para conexão a banco de dados.
-- Interface simples e direta para interação do usuário.
+## 🛠️ Tecnologias Utilizadas
 
-## Tecnologias Utilizadas
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-- PHP (backend)
-- MySQL (presumido para gerenciamento do banco de dados, dada a presença do arquivo de configuração)
-- HTML (estrutura das páginas)
+---
 
-## Como Instalar e Rodar
+## ✨ Funcionalidades Principais
 
-1. Clone o repositório localmente:
-   ```bash
-   git clone <URL-do-repositório>
-   ```
-2. Configure o banco de dados:
-   - Crie uma base de dados MySQL.
-   - Configure o arquivo `config.php` com os dados corretos do seu banco (host, usuário, senha e nome do banco).
-3. Importe a estrutura da tabela de produtos (baseado nas queries que utilizará no projeto).
-4. Coloque os arquivos em seu servidor web local (ex: XAMPP, WAMP) no diretório público.
-5. Acesse `index.php` pelo navegador para utilizar o sistema.
+- Cadastro de produtos com informações essenciais (nome, descrição, preço, etc.)
+- Visualização da lista de produtos cadastrados
+- Estrutura básica para futura implementação de edição e exclusão
+- Configuração simples e rápida para conexão com banco de dados
+- Interface limpa e intuitiva para facilitar o uso
 
-## Estrutura do Projeto
+---
+
+## 📁 Estrutura de Pastas
 
 ```
 Cadastro_de_produto/
-├── cadastro_produto.php     # Script principal para processamento do cadastro de produtos
-├── config.php               # Configurações do banco de dados e conexão
-└── index.php                # Página inicial / formulário para cadastro de produtos
+│
+├── cadastro_produto.php       # Lógica para cadastro de produtos
+├── config.php                 # Arquivo de configuração (ex: conexão com banco)
+├── index.php                  # Página inicial e lista de produtos
+└── README.md                  # Documentação do projeto
 ```
 
 ---
 
-Desenvolvido para facilitar o gerenciamento básico de produtos com foco em simplicidade e aprendizado.
+## ⚙️ Como Executar o Projeto
+
+1. **Pré-requisitos:**
+   - Servidor web com suporte a PHP (ex: Apache, Nginx)
+   - Servidor de banco de dados MySQL ou MariaDB
+   - PHP instalado com extensões para MySQL (mysqli ou PDO)
+
+2. **Passos para execução:**
+
+```bash
+# Clone o repositório
+git clone https://github.com/H-Saimon/Cadastro_de_produto.git
+
+# Entre na pasta do projeto
+cd Cadastro_de_produto
+```
+
+3. **Configuração do banco de dados:**
+
+- Crie um banco de dados no MySQL para o projeto.
+- Edite o arquivo `config.php` para inserir suas credenciais de conexão ao banco:
+
+```php
+// Exemplo básico
+define('DB_HOST', 'localhost');
+define('DB_USER', 'seu_usuario');
+define('DB_PASS', 'sua_senha');
+define('DB_NAME', 'nome_do_banco');
+```
+
+4. **Importe a estrutura do banco (caso exista script SQL).**
+
+5. **Coloque os arquivos na pasta pública do seu servidor web (Ex: `htdocs` ou `www`).**
+
+6. **Acesse via navegador o arquivo `index.php`:**
+
+```
+http://localhost/Cadastro_de_produto/index.php
+```
+
+---
+
+## 👨‍💻 Autor
+
+Hítalon Saimon  
+[GitHub - H-Saimon](https://github.com/H-Saimon)
+
+---
+
+*Este projeto é aberto para contribuições. Sinta-se à vontade para abrir issues e pull requests!*
+```
