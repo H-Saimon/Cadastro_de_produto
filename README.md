@@ -1,202 +1,157 @@
 # Cadastro_de_produto
 
-[![Versão](https://img.shields.io/badge/version-1.0.0-blue.svg)]()
-[![Issues](https://img.shields.io/github/issues/SeuUsuario/Cadastro_de_produto)]()
-[![Licença](https://img.shields.io/badge/license-MIT-green)]()
-[![Linguagem](https://img.shields.io/badge/language-PHP-blue)]()
-[![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-yellow)]()
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Issues](https://img.shields.io/github/issues/H-Saimon/Cadastro_de_produto?style=for-the-badge)
+![License](https://img.shields.io/github/license/H-Saimon/Cadastro_de_produto?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/H-Saimon/Cadastro_de_produto?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-em_desenvolvimento-yellow?style=for-the-badge)
 
 ---
 
-## Descrição do Projeto
+## 🚀 Descrição
 
-O **Cadastro de Produto** é uma aplicação web desenvolvida em PHP para gerenciamento prático e eficiente de produtos. Seu propósito é oferecer uma solução simples para cadastro, visualização e organização de informações básicas de produtos, facilitando o controle em pequenos sistemas comerciais ou como base para projetos maiores. 
+O **Cadastro_de_produto** é uma aplicação web desenvolvida em PHP que oferece um sistema simples e funcional para o gerenciamento de produtos. Seu objetivo principal é facilitar o cadastro, visualização e manutenção dos dados básicos de produtos, atendendo a pequenos negócios, projetos acadêmicos ou desenvolvedores que desejam aprimorar habilidades em desenvolvimento PHP com operações CRUD (Create, Read, Update, Delete).
 
-Destinado a desenvolvedores iniciantes e intermediários que buscam aprender os conceitos de CRUD (Create, Read, Update e Delete) na linguagem PHP, o projeto oferece uma arquitetura direta e de fácil compreensão. O sistema emprega uma estrutura enxuta, ideal para fins educativos e aplicações básicas sem a complexidade de frameworks.
-
----
-
-## Funcionalidades
-
-- **Cadastro de Produtos**: Inclusão de novos produtos através de formulário web.
-- **Visualização de Produtos**: Listagem dos produtos cadastrados com informações essenciais.
-- **Atualização de Produtos**: Edição das informações cadastrais dos produtos.
-- **Exclusão de Produtos**: Remoção de produtos do banco de dados.
-- **Configuração Centralizada**: Arquivo dedicado para configuração de conexão com banco (MySQL).
+Este projeto resolve o problema da gestão eficiente de informações de produtos, trazendo uma interface prática e código organizado que pode servir como base para sistemas maiores. Desenvolvido com foco na simplicidade e extensibilidade, permite rápida configuração e customização conforme a necessidade do usuário.
 
 ---
 
-## Tecnologias Utilizadas
+## ✨ Funcionalidades
 
-- **Linguagem de Programação:** PHP
-- **Banco de Dados:** MySQL
-- **Front-end:** HTML5, CSS3 (embutidos nas páginas PHP)
-- **Servidor:** Apache / Nginx (recomendado para execução)
-  
-Badges:
-
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)  
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- Cadastro de novos produtos com campos básicos configurados via formulário em PHP.
+- Listagem dinâmica dos produtos cadastrados, possibilitando fácil visualização.
+- Estrutura preparada para futura implementação das operações de atualização e exclusão.
+- Configuração centralizada para conexão de banco de dados via arquivo `config.php`.
+- Interface web simples e direta, facilitando o uso por usuários sem familiaridade técnica avançada.
+- Uso de PHP nativo, possibilitando fácil entendimento e manutenção do código.
 
 ---
 
-## Estrutura de Diretórios
+## 🛠️ Tecnologias Utilizadas
+
+- **PHP**: Linguagem principal para desenvolvimento backend e interface.
+- **MySQL**: Banco de dados relacional para armazenamento dos produtos.
+- **HTML5**: Estruturação das páginas web.
+- **CSS3**: Estilização dos formulários e layout básico.
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```
 Cadastro_de_produto/
 ├── Cadastro_de_produto/
-│   ├── cadastro_produto.php      # Página responsável pelo cadastro e edição de produtos
-│   ├── config.php                # Configurações do banco de dados e conexões
-│   └── index.php                 # Página principal que exibe a listagem dos produtos
-└── README.md                    # Documento atual com instruções e detalhamento
+│   ├── cadastro_produto.php      # Script responsável pelo formulário e lógica de inserção de produtos
+│   ├── config.php                # Arquivo de configuração da conexão com o banco de dados
+│   └── index.php                 # Página inicial que lista os produtos cadastrados
+└── README.md                     # Documentação do projeto
 ```
 
-- **cadastro_produto.php:** Interface que permite inserir e editar dados do produto. Contém formulários que submetem dados ao banco.
-- **config.php:** Centraliza a configuração da conexão MySQL, facilitando manutenção e reutilização.
-- **index.php:** Página inicial que exibe a lista dos produtos cadastrados, possibilitando navegação para editar ou excluir cada item.
+- **cadastro_produto.php**: Contém o formulário para inserção de novos produtos e o processamento dos dados enviados.
+- **config.php**: Centraliza as configurações de acesso ao banco de dados, facilitando manutenção.
+- **index.php**: Implementa a visualização dos produtos já cadastrados, exibindo os dados armazenados.
 
 ---
 
-## Instalação e Execução
+## ⚙️ Instalação e Execução
 
-### Pré-requisitos
+1. Clone o repositório:
 
-- Servidor web com suporte a PHP (versão 7.0 ou superior)
-- Servidor de banco de dados MySQL/MariaDB
-- Navegador web moderno
-
-### Passos para instalação
-
-1. Clone este repositório em seu ambiente local ou servidor:
-   ```bash
-   git clone https://github.com/SeuUsuario/Cadastro_de_produto.git
-   ```
-2. Configure o banco de dados MySQL:
-   - Crie um banco de dados, por exemplo `cadastro_produto_db`.
-   - Execute o script SQL (criado manualmente ou conforme documentação) para criar a tabela de produtos:
-     ```sql
-     CREATE TABLE produtos (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       nome VARCHAR(255) NOT NULL,
-       descricao TEXT,
-       preco DECIMAL(10,2) NOT NULL,
-       quantidade INT NOT NULL,
-       data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-     );
-     ```
-3. Ajuste as credenciais de conexão no arquivo `Cadastro_de_produto/config.php`:
-   ```php
-   <?php
-   $host = 'localhost';
-   $usuario = 'seu_usuario';
-   $senha = 'sua_senha';
-   $banco = 'cadastro_produto_db';
-
-   $conexao = new mysqli($host, $usuario, $senha, $banco);
-
-   if ($conexao->connect_error) {
-       die("Conexão falhou: " . $conexao->connect_error);
-   }
-   ?>
-   ```
-4. Copie a pasta `Cadastro_de_produto` para o diretório raiz do seu servidor web (ex: `/var/www/html`).
-5. Acesse via navegador o endereço do servidor, por exemplo:
-   ```
-   http://localhost/Cadastro_de_produto/index.php
-   ```
-
----
-
-## Endpoints
-
-Este projeto não fornece API REST explícita, a interação é realizada via formulários PHP para páginas web.
-
----
-
-## Testes
-
-Atualmente, o projeto não inclui testes automatizados. Recomenda-se realizar testes manuais acessando as funcionalidades para garantir:
-
-- Inserção válida de produtos
-- Alteração correta dos dados
-- Exclusão efetiva
-- Validação básica no formulário
-
----
-
-## Deploy
-
-Para publicar o sistema em produção, recomenda-se:
-
-- Ambiente Linux com servidor Apache ou Nginx configurado para PHP.
-- Banco MySQL/MariaDB instalado e configurado.
-- Configurar permissões adequadas para as pastas do sistema.
-- Opcional: uso de container Docker com imagem PHP + MySQL para facilitar deploy.
-
-Exemplo simples de Docker Compose:
-
-```yaml
-version: '3.8'
-services:
-  web:
-    image: php:7.4-apache
-    volumes:
-      - ./Cadastro_de_produto:/var/www/html/Cadastro_de_produto
-    ports:
-      - "80:80"
-  db:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: sua_senha_root
-      MYSQL_DATABASE: cadastro_produto_db
-    volumes:
-      - db_data:/var/lib/mysql
-volumes:
-  db_data:
+```bash
+git clone https://github.com/H-Saimon/Cadastro_de_produto.git
 ```
 
+2. Navegue até o diretório do projeto:
+
+```bash
+cd Cadastro_de_produto/Cadastro_de_produto
+```
+
+3. Configure o arquivo `config.php` com suas credenciais de banco de dados MySQL:
+
+```php
+<?php
+$host = 'localhost';
+$username = 'seu_usuario';
+$password = 'sua_senha';
+$database = 'nome_do_banco';
+
+$conn = new mysqli($host, $username, $password, $database);
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
+?>
+```
+
+4. Importe a estrutura da tabela no seu banco MySQL (exemplo para tabela produtos):
+
+```sql
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10,2),
+    quantidade INT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+5. Inicie um servidor web local que suporte PHP (exemplo com PHP embutido):
+
+```bash
+php -S localhost:8000
+```
+
+6. Acesse o sistema via navegador em `http://localhost:8000/index.php` para visualizar os produtos e em `http://localhost:8000/cadastro_produto.php` para cadastrar novos.
+
 ---
 
-## Segurança
+## 🛠️ Endpoints
 
-- Não há sistema de autenticação implementado; recomenda-se proteger o acesso às páginas via autenticação HTTP ou firewall, em ambientes produtivos.
-- Validações básicas de formulário são feitas no cliente e servidor, porém ainda devem ser reforçadas para evitar injeção SQL ou XSS.
-- A conexão com banco usa mysqli com escapatória implícita; para maior segurança, usar statements preparados (mysqli_stmt).
-- Recomenda-se configurar HTTPS no servidor para proteger o tráfego de dados sensíveis.
+Este projeto não implementa ainda uma API RESTful, portanto não possui endpoints formais. A interação ocorre via formulários tradicionais e páginas PHP.
 
 ---
 
-## Melhorias Futuras
+## ✅ Testes
 
-- Implementar sistema de autenticação e controle de acesso para usuários.
-- Adicionar validação e sanitização mais robusta dos dados do formulário.
-- Migrar a camada de acesso ao banco para PDO com prepared statements.
-- Criação de testes unitários e de integração automatizados.
-- Implementar paginação e busca na listagem dos produtos.
-- Adotar arquitetura MVC para melhor organização e manutenção.
-- Utilizar frameworks PHP modernos para escalabilidade (ex: Laravel).
-- Adicionar upload de imagens para produtos.
+Não há testes automatizados configurados neste momento. Recomenda-se testes manuais das funcionalidades de cadastro e listagem navegando pelas páginas e verificando a persistência dos dados no banco MySQL.
 
 ---
 
-## Contribuição
+## 🔐 Segurança
 
-Contribuições são bem-vindas! Para contribuir:
-
-1. Faça um fork deste repositório.
-2. Crie uma branch com a sua feature: `git checkout -b minha-feature`.
-3. Faça commit das alterações: `git commit -m 'Descrição da sua alteração'`.
-4. Faça push para a branch: `git push origin minha-feature`.
-5. Abra um Pull Request descrevendo suas modificações.
-
-Por favor, siga as boas práticas de codificação e mantenha o padrão atual do projeto.
+- Conexão com o banco de dados está centralizada, permitindo fácil aplicação de práticas seguras.
+- Não há autenticação implementada, recomendando-se integração futura para controle de acesso.
+- Validação básica de entrada deve ser feita nas páginas PHP para evitar inserção de dados inválidos ou ataques comuns, como SQL Injection e XSS.
+- Sugere-se o uso preparado (Prepared Statements) no PHP para prevenção contra SQL Injection, ainda não aplicado.
 
 ---
 
-## Licença
+## ☁️ Deploy
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- A aplicação pode ser publicada em qualquer servidor web com suporte a PHP e MySQL.
+- Não há container Docker oficial, porém pode ser containerizada com uma imagem padrão PHP-Apache ou PHP-FPM com MySQL.
+- Para deploy simples:
+  - Configure ambiente PHP+MySQL.
+  - Transfira os arquivos e configure o banco pelo arquivo `config.php`.
+  - Garanta permissões adequadas e segurança no servidor.
 
 ---
+
+## 🚀 Melhorias Futuras
+
+- Implementação completa das operações Update e Delete para o CRUD.
+- Adoção de Prepared Statements para segurança aprimorada contra SQL Injection.
+- Inclusão de autenticação e autorização para acesso restrito ao sistema.
+- Melhoria da interface com uso de frameworks CSS ou front-end moderno.
+- Implementação de testes automatizados (unitários e funcionais).
+- Desenvolvimento de API RESTful para uso em serviços externos.
+- Automatização do deploy usando Docker e integração contínua (CI/CD).
+- Validação front-end para melhorar a experiência do usuário.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Hítalon Saimon Santos Silva**  
+GitHub: https://github.com/H-Saimon
